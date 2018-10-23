@@ -11,7 +11,7 @@ images=(kube-apiserver:v1.12.1 kube-controller-manager:v1.12.1 kube-scheduler:v1
 
 for image in ${images[@]}; do
   docker pull ${MY_REGISTRY}/$image
-  docker tag ${MY_REGISTRY}/$image k8s.gci.io/$image
+  docker tag ${MY_REGISTRY}/$image k8s.gcr.io/$image
 done
 
 ## 拉取其他镜像
